@@ -5,9 +5,13 @@ it do imports by itself
 import NavBar from '../components/NavBar.vue'
 </script> 
 -->
+<script setup>
+    useHead({
+        title: "CarTrader",
+    });
+</script>
 <template>
     <div>
-        <NavBar/>
         <!-- Wrap a component inside dir and use it like this syntax- [DirName + ComponentName] -->
         <CarHero/>
     </div>
